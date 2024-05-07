@@ -1,0 +1,164 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2E7D32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#todo-input:hover {
+    border-color: #5CDB95;
+}
+
+#todo-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5CDB95;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#todo-form button:hover {
+    background-color: #379683;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-list li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    animation: slideDown 0.3s ease;
+    /* transition: margin-bottom 0.3s ease; */
+}
+
+#todo-list li + li {
+    animation: slideDown 0.3s ease;
+    animation-delay: 0.3s; /* delay the animation of existing items */
+}
+
+#todo-list li.deleting {
+    animation: slideUpFadeOut 0.3s ease forwards;
+}
+
+#todo-list li.moveUp {
+    /* animation: slideUp 0.3s ease forwards; */
+    /* transform: translateY(-10px); Replace -30px with the height of your list items */
+}
+
+#todo-list li .custom-checkbox {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#todo-list li .custom-checkbox i {
+    display: none;
+}
+
+#todo-list li .custom-checkbox.checked {
+    background: #000;
+}
+
+#todo-list li .custom-checkbox.checked i {
+    display: block;
+    color: #fff;
+}
+
+#todo-list li span {
+    flex-grow: 1;
+    text-align: left;
+}
+
+#todo-list li button {
+    background: #FF5722;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#todo-list li button:hover {
+    background: #C62828;
+}
+
+#todo-list li.completed span {
+    text-decoration: line-through;
+    color: #757575;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px)
+    }
+}
+
+@keyframes slideUpFadeOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
