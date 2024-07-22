@@ -44,10 +44,6 @@ Enhancement suggestions are welcome! Please provide:
 - Include the relevant issue number if applicable.
 - Update the `README.md` with details of changes to the interface, including new environment variables, exposed ports, or useful file locations.
 
-## Code of Conduct
-
-This project and everyone participating in it is governed by the [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
-
 ## Questions?
 
 If you have any questions, please feel free to contact the project maintainers.
