@@ -1,6 +1,6 @@
 # Todo List Application
 
-This Todo List application is a simple, yet powerful tool to manage your daily tasks. Built with HTML, CSS, and JavaScript, it offers a sleek interface and intuitive interaction patterns.
+This Todo List application is a simple, yet powerful tool to manage your daily tasks. Built with HTML, CSS, and JavaScript, it offers a sleek interface and intuitive interaction patterns. Try it out [here](https://discoverprogramming.github.io/todo-list/)
 
 ## Features
 
